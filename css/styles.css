@@ -44,6 +44,7 @@ ul {
 .button {
   font-family: inherit;
   cursor: pointer;
+  border: none;
 }
 .container {
   margin-left: auto;
@@ -51,8 +52,6 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 2px solid #000000;
 }
 /* Cкрытый заголовко h2 */
 .visually-hidden {
@@ -75,6 +74,8 @@ ul {
 
 /* Стили шапки */
 .head-site {
+border: 1px solid #ECECEC;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -334,7 +335,7 @@ ul {
   color: var(--button-text-color);
   background-color: #2196f3;
 }
-.service-button + .service-button {
+.list-btn + .list-btn {
   margin-left: 8px;
 }
 
