@@ -7,7 +7,7 @@
   --button-text-color: #ffffff;
   --title-text-color: #212121;
   --primary-font: 'Roboto', sans-serif;
-  --accent-color: ;
+  --card-set-gap: 30px;
 }
 
 body {
@@ -78,7 +78,7 @@ ul {
 
 /* Стили шапки */
 .head-site {
-border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 
   font-weight: 500;
   font-size: 14px;
@@ -289,7 +289,6 @@ border: 1px solid #ECECEC;
 }
 .address-text {
   margin-top: 20px;
-  margin-bottom: 0;
 }
 .address-item {
   margin-top: 9px;
@@ -338,20 +337,25 @@ border: 1px solid #ECECEC;
 .ourprj {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 1210px;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 .ourpjc-list {
-  flex-basis: calc((100%-30px) / 3);
+  box-sizing: border-box;
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+
   border: 1px solid #eeeeee;
 }
-
-.ourpjc-list:nth-child(3n),
+/* .ourpjc-list:nth-child(3n),
 .ourpjc-list:nth-child(3n + 2) {
   margin-left: 30px;
 }
 .ourpjc-list:nth-child(n + 4) {
   margin-top: 30px;
-}
+} */
 .ourprj-title {
   font-weight: bold;
   font-size: 18px;
@@ -367,8 +371,8 @@ border: 1px solid #ECECEC;
   letter-spacing: 0.03em;
 }
 .name-prj {
-  margin-top: 20px;
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
