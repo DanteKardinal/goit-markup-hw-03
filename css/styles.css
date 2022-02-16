@@ -32,6 +32,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 
 /* Общие стили */
 .title-seclion {
@@ -337,7 +341,6 @@ ul {
 .ourprj {
   display: flex;
   flex-wrap: wrap;
-  width: 1210px;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
