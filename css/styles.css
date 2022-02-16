@@ -1,8 +1,5 @@
-/* font-family: 'Raleway', sans-serif;
-     */
-
 :root {
-  --logo-text-font: 'Raleway';
+  --logo-text-font: 'Raleway', sans-serif;
   --nohover-navlink-color: #212121;
   --hover-cont-link: #2196f3;
   --primary-text-color: #757575;
@@ -24,6 +21,10 @@ a {
 li {
   list-style: none;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 /* Общие стили */
 .title-seclion {
@@ -36,6 +37,15 @@ li {
 .button {
   font-family: inherit;
   cursor: pointer;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid #000000;
 }
 /* Cкрытый заголовко h2 */
 .visually-hidden {
@@ -63,8 +73,18 @@ li {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
+
+/* Контейнер для стилизации */
+.head-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Логотип */
 .logo {
+  margin-right: 93px;
+
   font-family: var(--logo-text-font);
   font-weight: bold;
   font-size: 26px;
@@ -79,10 +99,20 @@ li {
 .footer-logo-studio {
   color: #ffffff;
 }
+
 /* Навигация */
+.nav {
+  display: flex;
+  align-items: center;
+}
 .nav-list {
+  display: flex;
 }
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -93,13 +123,24 @@ li {
 .nav-link:focus {
   color: #2196f3;
 }
+.nav-item + .nav-item {
+  margin-left: 50px;
+}
+
 /* Каналы связи со студией */
+.comm-list {
+  display: flex;
+}
+
 .comm-link {
   color: var(--primary-text-color);
 }
 .comm-link:hover,
 .comm-link:focus {
   color: var(--hover-cont-link);
+}
+.comm-item + .comm-item {
+  margin-left: 50px;
 }
 
 /* Основной контент страницы */
@@ -160,13 +201,26 @@ li {
 
 /* Footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
+}
+.footer-logo {
+  display: block;
+  margin-right: 0;
 }
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+}
+.address-text {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.address-item {
+  margin-top: 9px;
 }
 .footer-comm {
   color: var(--communication-color);
