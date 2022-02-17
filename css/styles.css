@@ -8,6 +8,7 @@
   --title-text-color: #212121;
   --primary-font: 'Roboto', sans-serif;
   --card-set-gap: 30px;
+  --primary-letter-spacing: 0.03em;
 }
 
 body {
@@ -43,7 +44,7 @@ img {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
 }
 .button {
   font-family: inherit;
@@ -105,6 +106,7 @@ img {
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
+  letter-spacing: var(--primary-letter-spacing);
 }
 .logo-web {
   color: #2196f3;
@@ -149,6 +151,7 @@ img {
 }
 
 .comm-link {
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 .comm-link:hover,
@@ -171,7 +174,7 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   width: 696px;
-  letter-spacing: 5px;
+  letter-spacing: 0.06em;
 
   text-align: center;
   text-transform: uppercase;
@@ -195,6 +198,7 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  letter-spacing: 0.06em;
   color: var(--button-text-color);
 }
 /* Секция Наши преимущества */
@@ -215,8 +219,8 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+  letter-spacing: var(--primary-letter-spacing);
   color: var(--title-text-color);
 }
 .about-text {
@@ -224,7 +228,7 @@ img {
 
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.5px;
+  letter-spacing: var(--primary-letter-spacing);
 }
 
 /* Секция Чем Мы занимаемся */
@@ -267,7 +271,7 @@ img {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   color: var(--title-text-color);
 }
 .outrteam-prof {
@@ -276,7 +280,7 @@ img {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
 }
 
 /* Footer */
@@ -299,11 +303,14 @@ img {
 }
 .address-text {
   margin-bottom: 9px;
+
+  letter-spacing: var(--primary-letter-spacing);
 }
 .address-item + .address-item {
   margin-top: 9px;
 }
 .footer-comm {
+  letter-spacing: var(--primary-letter-spacing);
   color: var(--communication-color);
 }
 .footer-comm:hover,
@@ -330,7 +337,7 @@ img {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   color: var(--title-text-color);
   background-color: #f5f4fa;
 }
@@ -367,7 +374,7 @@ img {
 
   font-size: 16px;
   line-height: 30px;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
 }
 .name-prj {
   padding-top: 20px;
